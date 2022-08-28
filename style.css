@@ -1,66 +1,139 @@
 body {
-    background-image: url(https://img.wallpapersafari.com/desktop/1920/1080/62/80/IE4rFw.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    background-color:rgb(238, 228, 250);
     font-family: 'Roboto', sans-serif;
-    margin: 0 auto;
-}
+} 
 
-main {
-    margin-top: 150px;
-    margin-left: 450px;
-    padding: 30px;
-    background-color: rgba(197, 165, 244, 0.733);
-    max-width: 500px;
-    border-radius: 30PX;
-}
-
-h1 {
-    text-align: center;
-    color: rgb(0, 0, 0);
-}
-
-input {
-    margin: 10px;
-}
-
-input,
-textarea {
-    display: block;
-    box-sizing: border-box;
-    width: 100%;
-    padding: 5px 5px 5px 0;
-    background: none;
-    border: none;
-    border-bottom: 1px solid black;
-    margin-bottom: 20px;
-}
-
-input:focus,
-textarea:focus {
-    outline: none;
-    border-bottom: 1px solid rgb(89, 0, 255);
-}
-
-input[type="submit"] {
-    background-color: rgb(49, 35, 61);
+header{
+    align-items: center;
+    background-color:aliceblue;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    justify-content: space-between;
     border-radius: 10px;
-    color: white;
-    width: 30%;
-    cursor: pointer;
-    position: relative;
+}
+.logo{
+    filter: drop-shadow(0 0 10px rgb(90, 163, 222));
 }
 
-input[type="checkbox"] {
-    max-width: 30px;
+nav a{
+    margin-left: 40px;
+    justify-content: space-between;
+    font-weight: bold;
+    text-decoration: none;
+     color: black;
+     transition: all 1s ease-out;
 }
 
-form ::placeholder {
-    color: rgb(26, 4, 43);
+nav a:hover{
+    color: aliceblue;
+    filter: drop-shadow(0 0 5px rgb(1, 6, 25));
 }
 
-form input :invalid {
-    color: blueviolet;
-    background-color: rgba(137, 43, 226, 0.692);
+header div img{
+width: 30px;
+height: 30px;
+transition: all 1s ease-out;
+}
+
+img:hover{
+    filter: drop-shadow(0 0 5px rgb(1, 6, 25));
+}
+
+main{
+    text-align: center;
+    background-color:aliceblue;
+    border-radius: 10px;
+}
+
+main .t-shirts{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+    grid-row-gap: 60px;
+}
+
+h2{
+    padding-top: 10px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    filter: drop-shadow(0 0 10px rgb(90, 163, 222));
+}
+
+h3{
+    margin: auto 0;
+}
+
+.t-shirt-item > p{
+    margin: auto 0;
+}
+
+main .backpack{ 
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+    grid-row-gap: 60px;
+}
+
+.backpack-items, .t-shirt-item{
+    width: 200px;
+    height: 260px;
+}
+
+img{
+    width: 130px;
+    height: 130px;
+}
+
+.backpack-items >p:last-child{
+    font-weight: bold;
+}
+
+.t-shirt-item >p:last-child{
+    font-weight: bold;
+}
+
+footer .footer-item{
+    display: flex;
+    justify-content: space-around;
+}
+
+footer h3{
+    margin: 30px;
+    filter: drop-shadow(0 0 10px rgb(90, 163, 222));
+}
+
+@media (max-width: 768px){
+    main .t-shirts, main .backpack{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .backpack-items, .t-shirt-item{
+        width: 160px;
+        height: 250px;
+    }
+
+    nav{
+        display: grid;
+    } 
+
+    header {
+        height: 90px;
+    }
+
+    h2{
+        margin-top: 20px;
+    margin-bottom: 20px;
+    }
+
+    header h2{
+        width: 80px;
+       text-align: center;
+    }
+
+    footer .footer-item{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
 }
