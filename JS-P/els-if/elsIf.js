@@ -1,6 +1,10 @@
-const legalAge = (20);
+const legalAge = 20;
 
-const clientAge = (17);
+const clientAge = 17;
+
+const myAge = 32
+
+const firstName = "eimantas"
 
 if (clientAge < 20) {
     alert("ilegalAge");
@@ -8,17 +12,15 @@ if (clientAge < 20) {
     alert("legalAge");
 }
 
-const firstName = "eimantas"
-
 if (firstName.length > 6) {
     alert("ilgasVardas");
 }
 
-const myAge = (32)
-
 if (myAge > 100 || myAge < 0) {
     alert("Invalid age");
-} else if (myAge > 19 || myAge < 99) {
+
+} else if (myAge > 19 && myAge < 99) {
     alert("Adult");
-} else (myAge > 1 || myAge < 18)
+
+} else (myAge > 1 && myAge < 18)
 alert("Child");
