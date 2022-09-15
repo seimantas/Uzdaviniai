@@ -8,7 +8,6 @@ const listItemOne = document.createElement("li");
 
 const listItemTwo = document.createElement("li");
 
-
 header.textContent = "Eimantas";
 header.style.color = "red";
 document.body.append(header);
@@ -21,12 +20,10 @@ unorderedList.append(listItemOne);
 listItemTwo.textContent = "BMW";
 unorderedList.append(listItemTwo);
 
-
 listItemThree.textContent = "AUDI";
 unorderedList.append(listItemThree);
 
 ////////////////////////////////////
-
 
 const fruitsList = document.createElement("ul");
 
@@ -37,9 +34,7 @@ document.body.append(fruitsList);
 const fruitsListItems = ("Banana", "Apple", "Orange");
 
 for (fruitsListItem of fruitsListItems) {
-    const listItem = document.createElement("li");
-    listItem.textContent = fruitsListItems;
-    fruitsList.append(listItem);  
+  const listItem = document.createElement("li");
+  listItem.textContent = fruitsListItems;
+  fruitsList.append(listItem);
 }
-
-
