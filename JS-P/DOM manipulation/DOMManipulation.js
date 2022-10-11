@@ -16,7 +16,7 @@ const button = document.querySelector("button");
 button.style.cssText = "position:absolute; top:0; left:0;";
 
 let isInOriginalPosition = true;
-const changePosition = () => {
+const changePosition = (event) => {
   event.target.style.cssText = isInOriginalPosition
     ? "position:absolute; bottom:0; right:0;"
     : "position:absolute; top:0; left:0;";
