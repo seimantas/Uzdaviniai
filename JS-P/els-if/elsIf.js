@@ -2,25 +2,23 @@ const legalAge = 20;
 
 const clientAge = 17;
 
-const myAge = 32
+const myAge = 32;
 
-const firstName = "eimantas"
+const firstName = "eimantas";
 
 if (clientAge < 20) {
-    alert("ilegalAge");
+  alert("ilegalAge");
 } else {
-    alert("legalAge");
+  alert("legalAge");
 }
 
 if (firstName.length > 6) {
-    alert("ilgasVardas");
+  alert("ilgasVardas");
 }
 
-if (myAge > 100 || myAge < 0) {
-    alert("Invalid age");
-
+if (myAge > 100 && myAge < 0) {
+  alert("Invalid age");
 } else if (myAge > 19 && myAge < 99) {
-    alert("Adult");
-
-} else (myAge > 1 && myAge < 18)
+  alert("Adult");
+} else myAge > 1 && myAge < 18;
 alert("Child");
