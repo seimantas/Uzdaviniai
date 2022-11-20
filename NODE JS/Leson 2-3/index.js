@@ -1,20 +1,21 @@
-const express = require("express");
+const express = require('express');
+const cors = require('cors');
 
-require("dotenv").config();
+require('dotenv').config();
+
+const PORT = +process.env.PORT;
 
 const app = express();
-const PORT = process.env.PORT;
+
+const carsList = ['BMW', 'WV', 'Porshe', 'AUDI'];
 
 app.use(express.json());
+app.use(cors());
 
-app.get("/", (req, res) => {
-  res.send({ age: 27 });
-});
-
-app.post("/", (req, res) => {
-  res.send({ age: req.body.age * 2 });
+app.get('/carsList', (req, res) => {
+	res.send(carsList);
 });
 
 app.listen(PORT, () => {
-  console.log(`${PORT} Server is running`);
+	console.log(`${PORT} Server is running`);
 });
